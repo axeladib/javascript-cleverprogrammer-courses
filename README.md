@@ -1,2 +1,2 @@
-# jaavscript-cleverprogrammer-courses
+# javascript-cleverprogrammer-courses
 JavaScript Clever Programmer Courses
