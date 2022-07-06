@@ -31,8 +31,8 @@ const maxNumber = (numbers) =>{
   }
   console.log(`THe biggest number in the array is ${maxNumber}`);
 }
-const numbers =[1,2,3,4,5,6,2,3]
-maxNumber(numbers)
+const numbers = [1, 2, 3, 4, 5, 6, 2, 3];
+maxNumber(numbers);
 
 //PROJECT:Calculate frequencies of anything
 //ALGO:Expected to return object that show key=letter,value=number of times appeared
@@ -54,4 +54,23 @@ const letterFrequency =(phrases) =>{
   }
   return frequency
 }
-console.log(letterFrequency("haha"))
+console.log(letterFrequency("haha"));
+
+// PROJECT: Words Frequency
+//TODO:Use the string.split(separator) to turn string into array by the common factor
+const wordsFrequency = (phrases) => {
+  let results = {}
+  const words = phrases.split(" ");
+  for(word of  words){
+    if(word in results){
+      //              Accesing the value using results[word] and add 1 everytime the if statement is TRUE
+      results[word] = results[word] + 1
+    }
+    else{
+      results[word]=1;
+    }
+  }
+  return results
+}
+
+console.log(wordsFrequency("lol what lol lol what"));
