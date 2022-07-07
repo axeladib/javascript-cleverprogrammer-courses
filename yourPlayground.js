@@ -63,7 +63,7 @@ const wordsFrequency = (phrases) => {
   const words = phrases.split(" ");
   for(word of  words){
     if(word in results){
-      //              Accesing the value using results[word] and add 1 everytime the if statement is TRUE
+      // Accesing the value using results[word] and add 1 everytime the if statement is TRUE
       results[word] = results[word] + 1
     }
     else{
@@ -74,3 +74,11 @@ const wordsFrequency = (phrases) => {
 }
 
 console.log(wordsFrequency("lol what lol lol what"));
+
+//PROJECT:filter an object inside an array
+const actorsProfile = [
+  { name: "Johny", netWorth: "100000" }, { name: "Amber", netWorth: "10" }, { name: "Leo", netWorth: "2000000" }
+]
+               //                           Need a condition if not then the all the condition is true
+const myActor = actorsProfile.filter(actor=>actor.netWorth>10);
+console.log(myActor);
